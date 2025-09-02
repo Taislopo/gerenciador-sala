@@ -4,7 +4,7 @@
 $_ENV = parse_ini_file('.env');
 // A função parse_ini_file() transforma esse conteúdo em um array associativo e o armazena em $_ENV.
 
-var_dump($_ENV);
+// var_dump($_ENV);
 
 echo '<hr>';
 // Imprime uma linha horizontal na página, apenas para separar visualmente o conteúdo exibido.
@@ -17,3 +17,6 @@ $usuario = $_ENV['USUARIO'];
 $senha = $_ENV['SENHA'];
 
 $conn = new PDO($dsn, $usuario, $senha);
+
+const RESERVA_DESATIVADA = 1;
+const RESERVA_ATIVADA = 0;

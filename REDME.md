@@ -43,3 +43,29 @@
             - identificação da turma
             - horario da turma
 
+# o que é .env?
+📄 .env é um arquivo que guarda configurações do sistema, como:
+ nome do banco
+ usuário
+ senha chaves secretas
+ Ele serve para não deixar essas informações no código, facilitando mudanças e melhorando a segurança.
+
+# o que é .env-exemplo?
+serve para colocar as variaveis sem mostrar os valores delas quando for subir no git
+
+# o que é o arquivo config.php?
+Este arquivo armazena as configurações do banco de dados do seu site, como por exemplo, nome do banco de dados, nome do usuário, senha e host
+
+# o que é .gitgnore?
+guardar infomações do codigo que são sensiveis e faz com que não mostre no github
+
+# aula 02/09/25
+          ## deletar informações
+
+requisição get chamar ela pelo link, para isso colocar o nome do arquivo e após o ? colocar as informações como o id do GET e a variavel que vai guardar ela, criar a arquivo que vai servir para deletar.
+ 
+ No arquivo colocar o require codigo que sem ele o sistema não funciona onde nele no caso vai ter as configurações, onde lá se tem codigos globais que serve para o funcionamento do sistema como a conexão banco entre outros.
+ 
+   
+
+
