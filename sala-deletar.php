@@ -19,5 +19,5 @@ $resultado = $conn->prepare($scriptDeletar)->execute([
 ]);
 
 
- header('location:./cad-sala.php');
+//  header('location:./cad-sala.php');
 
