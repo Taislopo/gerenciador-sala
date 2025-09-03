@@ -65,6 +65,10 @@ guardar infomações do codigo que são sensiveis e faz com que não mostre no g
 requisição get chamar ela pelo link, para isso colocar o nome do arquivo e após o ? colocar as informações como o id do GET e a variavel que vai guardar ela, criar a arquivo que vai servir para deletar.
  
  No arquivo colocar o require codigo que sem ele o sistema não funciona onde nele no caso vai ter as configurações, onde lá se tem codigos globais que serve para o funcionamento do sistema como a conexão banco entre outros.
+
+ const é uma variavel global que no caso do nosso codigo colocamos um magic numero que seria um numero que buga nossa logica e que temos que cirar uma variavel para especificalo
+
+ Depois criamos uma a variavel id para guardar o id do GET e criamos a variavel para colocar o update do banco e outra variavel onde co
  
    
 
