@@ -10,8 +10,8 @@
                 <form action="./sala-cadastro.php" method="POST" id="form-sala-cadastro">
 
                     <div class="campo-sala d-flex gap-2 mt-2">
-                        <label style="width: 20%;" for="identificacao" class="fw-semibold my-auto">Identificação:</label>
-                        <input for="text" class="form-control" placeholder="informe o nome da sala" name="txtIdentificacao" id="identificacao"></input>
+                        <label style="width: 20%;" for="indentificacao" class="fw-semibold my-auto">Identificação:</label>
+                        <input for="text" class="form-control" placeholder="informe o nome da sala" name="txtIndentificacao" id="indentificacao"></input>
                     </div>
 
                     <div class="campo-sala d-flex gap-2 mt-2">
