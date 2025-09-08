@@ -3,7 +3,7 @@ include './template/header.php';
 include'./config.php';
 include'./template/modal-cadastro-sala.php';
 
-    $script = 'SELECT * FROM tb_sala';                  
+    $script = 'SELECT * FROM tb_sala WHERE status = 0';                  
 
     $resultadoPesquisa = $conn->query($script)->fetchAll();
 
@@ -30,16 +30,21 @@ include'./template/modal-cadastro-sala.php';
 
             <tr>
                 <th scope="row"><?= $linha['id'] ?></th>
-                <td><?= $linha['identificacao'] ?></td>
+                <td><?= $linha['indentificacao'] ?></td>
                 <td>
-                    <a href="./sala-editar.php?id_editar=<?= $linha['id'] ?>" class="btn btn-warning">
+                    <a type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="exampleModal" data-bs-info1="salinhatop" data-bs-info2="90" data-bs-info3="lablab">
                         <i class="bi bi-pencil-square"></i>
                     </a>
                     <a href="./sala-deletar.php?id_deletar=<?= $linha['id'] ?>" class="btn btn-danger">
                         <i class="bi bi-trash3-fill"></i>
                     </a>
                 </td>
-            </tr>
+                
+            
+       
+
+
+
             <?php } ?>
         </tbody>
         </div>

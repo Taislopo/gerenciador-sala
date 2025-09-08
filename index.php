@@ -9,7 +9,7 @@ $senha = '';
 
 $conn = new PDO($dsn,$usuario,$senha);
 $scriptConsulta = "SELECT 
-                    trs.id, ts.identificacao as 'nome_sala', 
+                    trs.id, ts.indentificacao as 'nome_sala', 
                     td.nome as 'nome_docente', 
                     tt.sigla as 'sigla_turma'
                    FROM tb_reserva_sala trs
