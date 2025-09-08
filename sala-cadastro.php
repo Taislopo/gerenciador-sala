@@ -4,9 +4,9 @@
 
     echo'<h1>Sala Cadastro</h1>';
     
-    var_dump($_POST);
+    // var_dump($_POST);
 
-    $identificacao = $_POST["txtIdentificacao"];
+    $indentificacao = $_POST["txtIndentificacao"];
     $tipoSala = $_POST ["tipo-sala"];
     $qntdAluno = $_POST ["txtQntdSuporteAlunos"];
 
@@ -14,21 +14,21 @@
     $scriptCadastro = "INSERT INTO
     
         tb_sala(
-            identificacao,
+            indentificacao,
             tipo_sala,
             quant_suporte_alunos
 
         )
         VALUES(
-            :identicacao,
+            :indentificacao,
             :tipo_sala, 
             :quant_suporte_alunos     
-        )";  ;  
+        )";    
     
 
     $scriptPreparo = $conn->prepare($scriptCadastro)->execute([
 
-        ':identicacao'=> $identificacao,
+        ':indentificacao'=> $indentificacao,
         ':tipo_sala' => $tipoSala,
         ':quant_suporte_alunos' => $qntdAluno
 
